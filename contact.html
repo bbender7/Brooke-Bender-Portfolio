@@ -8,6 +8,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    /* Navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo-box {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6E6256;
+}
+
+nav a {
+  margin-left: 30px;
+  color: #D1C8BD;
+  font-size: 18px;
+}
+
     /* GLOBAL */
 body {
   font-family: "Montserrat", sans-serif;
@@ -121,57 +146,148 @@ h1, h2 {
   opacity: 0.4;
   width: 100%;
 }
+footer {
+  background: #222220;
+  padding: 60px 40px;
+}
 
+.footer-tags {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-tags span {
+  margin: 0 15px;
+  color: #aaa;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  max-width: 120px;
+}
+
+.footer-box {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #D1C8BD;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #E1E2DD;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero container">
-    <h1>GET IN<br>CONTACT</h1>
-    <img src="your-image.jpg" alt="hero photo">
-  </section>
+  <div class="container">
 
-  <!-- CONTACT PANEL -->
-  <section class="contact-panel">
-    <div class="container panel-inner">
-
-      <div class="left">
-        <h2>I’d love to hear from you!</h2>
-        <p>
-          Whether you’ve got a project in mind or just wanna talk through a potential collab, 
-          my inbox is open. Tell me what you're dreaming up — I’m always down to create something new.
-        </p>
-
-        <div class="socials">
-          <img src="instagram.png" alt="Instagram">
-          <img src="linkedin.png" alt="LinkedIn">
-        </div>
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <div class="logo-box"></div>
+        <p>Brooke<br>Bender</p>
       </div>
 
-      <div class="right">
-        <div class="line">
-          <p class="label">Call Me</p>
-          <h3>(519) 378 - 6995</h3>
-          <div class="underline"></div>
-        </div>
+      <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
 
-        <div class="line">
-          <p class="label">Email Me</p>
-          <h3>bjbender@uwaterloo.ca</h3>
-          <div class="underline"></div>
-        </div>
+  </div>
 
-        <div class="line">
-          <p class="label">Open Resume</p>
-          <h3>resume link</h3>
-          <div class="underline"></div>
-        </div>
+
+  <!-- HERO TITLE -->
+  <div class="hero">
+    <h1>
+      GET IN<br>CONTACT
+    </h1>
+
+    <img src="your-image-here.jpg" alt="Contact photo">
+  </div>
+
+
+  <!-- CONTACT PANEL -->
+  <div class="container">
+    <section class="panel">
+
+      <img class="header-photo" src="hero-photo.jpg" alt="Brooke photo">
+
+      <h2 class="panel-title">I’d love to hear from you!</h2>
+
+      <p class="panel-text">
+        Whether you’ve got a project in mind or just wanna chat about a potential collab,
+        my inbox is open. Tell me what you're dreaming up! I'm always open to create
+        something new.
+      </p>
+
+      <!-- Contact Blocks -->
+      <div class="contact-block">
+        <p class="label">Call Me</p>
+        <p class="info">(519) 378 - 6995</p>
+      </div>
+
+      <div class="contact-block">
+        <p class="label">Email Me</p>
+        <p class="info">bjbender@uwaterloo.ca</p>
+      </div>
+
+      <div class="contact-block">
+        <p class="label">Open Resume</p>
+        <p class="info">resume link</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="socials">
+        <img src="icon-instagram.png" class="icon" alt="Instagram">
+        <img src="icon-linkedin.png" class="icon" alt="LinkedIn">
+      </div>
+
+    </section>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+
+      <div class="footer-column">
+        <h4>Brooke Bender</h4>
+        <p>University of Waterloo</p>
+        <p>GBDA</p>
+        <p>Term 2A</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Links</h4>
+        <p>Home</p>
+        <p>About</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>brooke@benderstudios.ca</p>
+        <p>bjbender@uwaterloo.ca</p>
+        <p>(519) 378 - 6995</p>
       </div>
 
     </div>
-  </section>
+  </footer>
 
 </body>
+
 </html>
