@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CA">
   <meta charset="UTF-8">
-   <!-- ------------------------------------------------ -->
   
 <head>
    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
@@ -24,7 +23,6 @@ h1, h2, h3 {
   padding: 0 20px;
 }
 
-/* --- NAV --- */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -35,20 +33,21 @@ h1, h2, h3 {
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none; 
+  color: inherit; 
 }
 
-.logo-box {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #6E6256;
+.nav-logo p {
+  margin: 0;
 }
 
 nav a {
   margin-left: 30px;
   color: #D1C8BD;
   font-size: 18px;
+  text-decoration: none;
 }
-/* --- HERO --- */
+
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -70,7 +69,6 @@ nav a {
     color: #bbb;
 }
 
-/* --- BIO --- */
 .bio-section {
     text-align: center;
     padding: 60px 20px;
@@ -95,7 +93,6 @@ nav a {
   border: none;
 }
 
-/* --- STACK --- */
 .stack {
     padding: 60px 20px;
     text-align: center;
@@ -111,9 +108,7 @@ nav a {
     width: 70px;
     margin: 20px;
 }
-    /* ===========================
-            FOOTER
-=========================== */
+
 footer {
   background: #222220;
   padding: 60px 40px;
@@ -166,18 +161,20 @@ footer {
     <header>
 
         <nav>
-            <div class="nav-bar">
-    <div class="nav-logo">
-      <div class="logo-box"></div>
-      <p>Brooke<br>Bender</p>
-    </div>
+           <div class="nav-bar">
 
-    <nav>
-      <a href="about.html">about</a>
-      <a href="projects.html">projects</a>
-      <a href="contact.html">contact</a>
-    </nav>
-  </div>
+  <a href="index.html" class="nav-logo">
+    <div class="logo-box"></div>
+    <p>Brooke<br>Bender</p>
+  </a>
+
+  <nav>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+</div>
         </nav>
     </header>
 
@@ -215,9 +212,7 @@ footer {
             <img src="af.png" alt="">
         </div>
     </section>
-  <!-- ===========================
-            FOOTER
-=========================== -->
+
 <footer id="contact">
 
   <div class="footer-tags"> photographer | designer | creative
@@ -225,7 +220,6 @@ footer {
 
   <div class="footer-content">
 
-    <!-- Footer Logo -->
     <div class="footer-left">
       <div class="footer-box"></div>
       <p>Brooke<br>Bender</p>
@@ -237,7 +231,6 @@ footer {
       </div>
     </div>
 
-    <!-- Footer Links -->
     <div class="footer-column">
       <h4>Brooke Bender</h4>
       <p>University of Waterloo</p>
@@ -260,6 +253,7 @@ footer {
       <p>(519) 378-6995</p>
     </div>
   </div>
+  </footer>
   </div>
 </body>
 </html>

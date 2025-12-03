@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Navigation bar */
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,12 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.nav-logo p {
+  margin: 0;
 }
 
 .logo-box {
@@ -31,9 +37,10 @@ nav a {
   margin-left: 30px;
   color: #D1C8BD;
   font-size: 18px;
+  text-decoration: none;
 }
 
-    /* GLOBAL */
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #1e1e1c;
@@ -52,9 +59,6 @@ h1, h2 {
   margin: 0;
 }
 
-/* ============================
-      HERO
-============================ */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -75,9 +79,6 @@ h1, h2 {
   border-radius: 4px;
 }
 
-/* ============================
-      CONTACT PANEL
-============================ */
 .contact-panel {
   background: #3e372f;
   padding: 80px 0;
@@ -118,7 +119,6 @@ h1, h2 {
   cursor: pointer;
 }
 
-/* RIGHT SIDE CONTACT LINES */
 .right {
   width: 50%;
   padding-top: 20px;
@@ -192,39 +192,34 @@ footer {
 
   <div class="container">
 
-    <!-- NAV BAR -->
     <div class="nav-bar">
-      <div class="nav-logo">
-        <div class="logo-box"></div>
-        <p>Brooke<br>Bender</p>
-      </div>
 
-      <nav>
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="contact.html">contact</a>
-      </nav>
-    </div>
+  <a href="index.html" class="nav-logo">
+    <div class="logo-box"></div>
+    <p>Brooke<br>Bender</p>
+  </a>
+
+  <nav>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+</div>
 
   </div>
 
-
-  <!-- HERO TITLE -->
   <div class="hero">
     <h1>
       GET IN<br>CONTACT
     </h1>
 
-    <img src="conatact page photo.png" alt="Contact photo">
+    <img src="contact page photo.png" alt="Contact photo">
   </div>
 
-
-  <!-- CONTACT PANEL -->
   <div class="container">
     <section class="panel">
-
-      <img class="header-photo" src="conatact page photo.png" alt="Brooke photo">
-
+      
       <h2 class="panel-title">I’d love to hear from you!</h2>
 
       <p class="panel-text">
@@ -233,7 +228,6 @@ footer {
         something new.
       </p>
 
-      <!-- Contact Blocks -->
       <div class="contact-block">
         <p class="label">Call Me</p>
         <p class="info">(519) 378 - 6995</p>
@@ -250,17 +244,14 @@ footer {
         <p class="info">resume link</p>
       </div>
 
-      <!-- Social Icons -->
       <div class="socials">
-        <img src="icon-instagram.png" class="icon" alt="Instagram">
-        <img src="icon-linkedin.png" class="icon" alt="LinkedIn">
+        <img src="instagram_icon.png" class="icon" alt="Instagram">
+        <img src="linkedin_icon.png" class="icon" alt="LinkedIn">
       </div>
 
     </section>
   </div>
 
-
-  <!-- FOOTER -->
   <footer>
     <div class="container footer-content">
 
